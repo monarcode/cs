@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap');
 
 $primary: #2F1847;
 $secondary: #FFB238;
@@ -19,7 +20,7 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     background-color: $white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -518,10 +519,6 @@ a {
     .text, .site-links, .socials {
         flex: 1 0 30rem;
     }
-
-    // .text {
-    //     // background-color: red;
-    // }
 
     .item {
         display: flex;
