@@ -618,6 +618,11 @@ a {
     transform-origin: center;
     transform-box: fill-box;
 }
+.mouse{
+    animation: float 3s ease-in-out infinite forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
 
 #g146 {
     animation: arm 1s ease-in-out infinite alternate;

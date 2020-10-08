@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/main.min.css">
-    <title>Document</title>
+    <title>CapitalSage</title>
 </head>
 
 <body>
@@ -35,12 +36,12 @@
     <!-- navbar end -->
 
     <!-- hero -->
-    <section id="hero" class="hero">
+    <section id="hero" class="hero" data-aos="fade" data-aos-duration="1500">
         <div class="box">
             <div class="container">
                 <div class="outer">
                     <div class="left p-3">
-                        <h1>LOOKING TO GROW YOUR<br>INCOME?<span>?</span></h1>
+                        <h1>LOOKING TO GROW YOUR<br>INCOME<span>?</span></h1>
                         <p>At CapitalSage we offer a wide variety of Products and Services, from investments, to VAS solutions, to e-Savings and MPOS / Agency Banking</p>
                         <a href="#wwd" class="cta">learn More</a>
                     </div>
@@ -58,7 +59,7 @@
     <section id="abt-us" class="abt-us p-2 p-lg-5">
         <div class="container">
             <div class="outer">
-                <div class="left p-5 d-flex align-items-center">
+                <div class="left p-5 d-flex align-items-center" data-aos="fade-up">
                     <!-- <img src="./assets/img/abt-uz.svg" alt="" class="img-fluid"> -->
                     <svg class="img-fluid" viewBox="0 0 1000 680" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="abt-uz">
@@ -467,7 +468,7 @@
                         </svg>
                             
                 </div>
-                <div class="right p-2 p-lg-5">
+                <div class="right p-2 p-lg-5" data-aos="fade-up">
                     <h2 class="water-mark d-none d-lg-block">ABOUT US</h2>
                     <h2 class="title">About <span>Us</span></h2>
                     <p>
@@ -502,7 +503,7 @@
                     <p class="sub-title text-center">From Loans, Financial Investment, to Acute Customer Support, Credit
                         Assist is all encompassing</p>
                 </div>
-                <div class="kards mt-3 mb-3">
+                <div class="kards mt-3 mb-3" data-aos="slide-up">
                     <div class="kard mb-5">
                         <img src="./assets/img/clarity_coin-bag-line.svg" alt="">
                         <h3 class="tilte">Investment</h3>
@@ -775,6 +776,15 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out-cubic'
+        });
     </script>
 </body>
 
