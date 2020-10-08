@@ -13,6 +13,8 @@ $black: #212225;
 
 html {
     font-size: 62.4%;
+    scroll-behavior: smooth;
+    scroll-padding: 3rem;
 }
 
 body {
@@ -68,14 +70,22 @@ a {
         a {
             color: $white;
             margin: 0 0.5rem;
+            
+            @media screen and (max-width:500px){
+                margin: 2rem 0;
+            }
 
             &:nth-of-type(5) {
                 margin-left: auto;
-                background-color: transparent;
-                border: 1px solid $secondary;
-                color: $secondary;
+                background-color: $secondary;
+                // border: 1px solid $secondary;
+                color: $white;
                 padding: 1rem 2rem;
                 border-radius: 3px;
+
+                @media screen and (max-width:500px){
+                    margin-left: unset;
+                }
             }
 
             &:nth-of-type(6) {
@@ -111,6 +121,10 @@ a {
         transform: skewY(5deg);
         display: flex;
         flex-wrap: wrap;
+
+        @media screen and (max-width:500px){
+            flex-wrap: wrap-reverse;
+        }
     }
 
     .left {
@@ -503,7 +517,7 @@ a {
 }
 
 .footer {
-    height: 50vh;
+    min-height: 50vh;
     background-color: $primary;
     overflow: hidden;
     color: $white;
@@ -538,7 +552,10 @@ a {
         display: flex;
         flex-direction: column;
 
-
+        h3 {
+            font-weight: bolder;
+            font-size: 2rem;
+        }
 
 
         a {
@@ -552,6 +569,22 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        h3 {
+            font-size: 5rem;
+            font-weight: bolder;
+
+            span {
+                color: $secondary;
+            }
+        }
     }
 }
 
