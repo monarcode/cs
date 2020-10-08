@@ -95,6 +95,11 @@ a {
                 border-radius: 3px;
             }
         }
+        
+    }
+
+    a.active, a:hover {
+        color: $secondary;
     }
 }
 
@@ -590,9 +595,105 @@ a {
 
 
 
+#boy1-head {
+    animation: boy1 1s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#palm {
+    animation: palm 1s linear infinite alternate forwards;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#envelope, #globe {
+    animation: float 4s ease-in-out infinite forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#phone {
+    animation: float 5s ease-in-out infinite forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#g146 {
+    animation: arm 1s ease-in-out infinite alternate;
+    transform-origin: bottom left;
+    transform-box: fill-box;
+}
+#Group2 {
+    animation: handy 1s ease-in-out infinite alternate;
+    transform-origin: bottom left;
+    transform-box: fill-box;
+}
+
+
 
 @media screen and (max-width: 500px) {
     html {
         font-size: 50%;
+    }
+
+    body {
+        font-size: 1.7rrem;
+    }
+}
+
+@keyframes boy1 {
+    0% {
+        transform: rotateZ(-5deg);
+    }
+    100% {
+        transform: rotateZ(5deg);
+    }
+}
+@keyframes palm {
+    0% {
+        transform: rotateZ(-5deg);
+    }
+    25% {
+        transform: rotateZ(5deg);
+    }
+    50% {
+        transform: rotateZ(-5deg);
+    }
+    100% {
+        transform: rotateZ(5deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes arm {
+    0% {
+        transform: rotateZ(-2deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(2deg);
+    }
+}
+@keyframes handy {
+    0% {
+        transform: rotateZ(-4deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(4deg);
     }
 }
